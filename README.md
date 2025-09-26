@@ -1,66 +1,145 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+🌐 SaaS LinkPro Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A SaaS platform built with Laravel, Blade, and MySQL that allows businesses and professionals to have their own LinkTree-style mini-website where all their important links, geolocation, QR code, and related content are grouped and displayed.
 
-## About Laravel
+This project includes:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+An admin panel for managing clients and their content.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+A public landing page where each client has a unique showcase URL.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+A modern, fully responsive UI optimized for all devices.
 
-## Learning Laravel
+🚀 Features
+🛠️ Admin Panel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+👤 Authentication System: Only admins can access.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+👥 Client Management (CRUD): Add, edit, delete, and view clients.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+🔗 Content Management (CRUD): Add related links, geolocation, colors, and QR codes per client.
 
-## Laravel Sponsors
+🔍 Filtering & Searching: Quickly search/filter clients or content.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+🎨 QR Code Generation: Each client gets a personalized QR code pointing to their landing page.
 
-### Premium Partners
+🌍 Public Landing Page
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+📑 Client Showcase Pages: Each client has a dedicated URL such as:
 
-## Contributing
+/clinique-fares
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+/restaurant-cook
 
-## Code of Conduct
+🔗 Links & Geolocation Display: Show grouped links, business details, and maps.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+📱 Responsive Design: Optimized for desktop, tablet, and mobile.
 
-## Security Vulnerabilities
+🎨 Modern Friendly UI: Clean and professional design.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+🛠️ Tech Stack
 
-## License
+Backend: Laravel (PHP Framework)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Frontend: Blade Templates, HTML, CSS, JavaScript
+
+Database: MySQL
+
+Authentication: Laravel built-in auth system
+
+QR Code Generator: Laravel package / integrated service
+
+📂 Project Structure
+saas-linktree/
+│── app/                 # Laravel backend logic
+│── resources/views/     # Blade templates (admin + client showcase)
+│── public/              # Public assets (CSS, JS, images)
+│── routes/web.php       # Application routes
+│── database/            # Migrations & seeds
+│── screenshots/         # Screenshots of UI
+│── README.md            # Documentation
+
+📸 Screenshots
+
+🔑 Admin Login <img width="1103" height="632" alt="image" src="https://github.com/user-attachments/assets/351d18f6-1ea7-4ae1-bb84-b907fe5fa12b" />
+
+
+📊 Admin Dashboard : 
+
+👥 Client Management <img width="1905" height="912" alt="image" src="https://github.com/user-attachments/assets/44ae9ea0-7599-4b3e-83ec-103153951455" />
+<img width="1902" height="910" alt="image" src="https://github.com/user-attachments/assets/05c4772b-764c-4c45-b5d6-7439be2aa807" />
+<img width="1907" height="917" alt="image" src="https://github.com/user-attachments/assets/a043ea58-289f-4c81-8a7c-99b7adceb290" />
+<img width="1908" height="917" alt="image" src="https://github.com/user-attachments/assets/c8d38704-1d46-475e-9936-f8ec84a1ac85" />
+
+
+🔗 Content Creation (Links/Geolocation/QR code) <img width="1886" height="922" alt="image" src="https://github.com/user-attachments/assets/fa1e14ee-a34e-434a-a7d8-fbf177e1894e" />
+<img width="1888" height="920" alt="image" src="https://github.com/user-attachments/assets/7ff732c7-02f0-4293-ae19-3a6950259a56" />
+
+
+🌍 Landing Page (screenshot)
+
+📑 Client Showcase Example (/clinique-fares) (screenshot)
+
+📑 Client Showcase Example (/restaurant-cook) (screenshot)
+
+⚙️ How It Works
+
+Admin logs in → Accesses secure admin panel.
+
+Admin creates a client → Adds client name, business type, etc.
+
+Admin adds content → Links, geolocation, colors, QR code.
+
+Client’s mini-site is generated automatically → Accessible via unique URL.
+
+Visitors → Navigate to /client-name to see grouped links and details.
+
+📦 Installation & Usage
+🔽 Clone the repo
+git clone [https://github.com/hamou592/saas-linktree.git](https://github.com/hamou592/linkpro.git)
+
+
+📦 Install dependencies
+composer install
+npm install && npm run dev
+
+⚙️ Setup environment
+
+Copy .env.example to .env
+
+cp .env.example .env
+
+
+Configure database in .env:
+
+DB_DATABASE=linkpro_db
+DB_USERNAME=root
+DB_PASSWORD=
+
+🗄️ Run migrations
+php artisan migrate
+
+🔑 Generate app key
+php artisan key:generate
+
+🚀 Serve the app
+php artisan serve
+
+
+Now visit 👉 http://127.0.0.1:8000
+
+Admin Panel → /admin
+
+Client Showcase → /client-name
+
+🔮 Future Improvements
+
+Add subscription plans for clients (SaaS monetization).
+
+Add analytics dashboard (track link clicks).
+
+Add custom domains for clients.
+
+👨‍💻 Author
+
+Hamou Nasreddine – [GitHub Profile](https://github.com/hamou592)
